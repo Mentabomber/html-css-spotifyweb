@@ -1,0 +1,62 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* debug */
+main{
+    display: flex;
+    background-color: blue;
+    position: relative;
+}
+
+#testata{
+    height: 100px;
+    width: calc(100% - 200px);
+    background-color: aqua;
+    position: fixed;
+    top: 0;
+    right: 0;
+    filter: opacity(50%);
+}
+
+nav{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: calc(100vh - 100px);
+    width: 200px;
+    background-color: black;
+}
+
+footer{
+    height: 100px;
+    width: 100%;
+    background-color: gray;
+}
+
+.row{
+    background-color: blueviolet;
+    width: calc(100% - 200px);
+    overflow: auto;
+    padding-top: 120px;
+}
+
+.box{
+
+
+    background-color: cadetblue;
+}
