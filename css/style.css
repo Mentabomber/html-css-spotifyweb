@@ -70,9 +70,16 @@ main{
 footer{
     height: 100px;
     width: 100%;
-    min-width: 200px;
     background-color: gray;
 }
+footer .row{
+    height: 100%;
+}
+
+footer .row .row{
+    height: 50%
+}
+
 
 .row{
     background-color: blueviolet;
@@ -83,6 +90,9 @@ footer{
     border: 1px solid black;
     flex-basis: calc((100% / 12) * 2 - 5%);
     max-width: 100%;;  
+}
+.col-3, .col-5{
+    border: 1px solid black;
 }
 
 .box{
