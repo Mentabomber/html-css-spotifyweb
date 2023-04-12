@@ -14,30 +14,43 @@
 
 
 
-
-
 /* debug */
 main{
     display: flex;
     background-color: blue;
-    position: relative;
 }
-
+#contenitore{
+    width: calc(100% - 200px);
+    background-color: brown;
+    overflow-y: auto;
+    height: calc(100vh - 100px);
+    padding-top: 120px;
+}
 #testata{
     height: 100px;
     width: calc(100% - 200px);
     background-color: aqua;
+    filter: opacity(50%);
     position: fixed;
     top: 0;
     right: 0;
-    filter: opacity(50%);
 }
-
-nav{
+#nav-esterno,
+#nav-interno ul{
     display: flex;
+    justify-content: center;
+}
+#nav-interno ul{
+    list-style-type: none;
+}
+#nav-interno li{
+    padding: 0 10px;
+}
+#nav-esterno{
     flex-direction: column;
     justify-content: space-evenly;
     height: calc(100vh - 100px);
+    min-height: 120px;
     width: 200px;
     background-color: black;
 }
@@ -45,18 +58,25 @@ nav{
 footer{
     height: 100px;
     width: 100%;
+    min-width: 200px;
     background-color: gray;
 }
 
 .row{
     background-color: blueviolet;
-    width: calc(100% - 200px);
-    overflow: auto;
-    padding-top: 120px;
+    width: 100%;
+
 }
+.col-2{
+    margin: 5px;
+    border: 1px solid black;
+    flex-basis: calc((100% / 12) * 2);
+    max-width: 150px;
 
+    min-width: 150px;
+}
 .box{
-
-
     background-color: cadetblue;
+    height: 150px;
+    width: 100%;
 }
