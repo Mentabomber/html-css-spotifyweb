@@ -42,9 +42,9 @@ main{
 #nav-esterno,
 #nav-interno ul{
     display: flex;
-    justify-content: center;
 }
 #nav-interno ul{
+    justify-content: center;
     list-style-type: none;
 }
 #nav-interno li{
@@ -52,10 +52,19 @@ main{
 }
 #nav-esterno{
     flex-direction: column;
+    justify-content: space-between;
     height: calc(100vh - 100px);
     min-height: 120px;
     width: 200px;
     background-color: black;
+    color: white;
+}
+#nav-eseterno img{
+    width: 50%;
+}
+.overflow-ul{
+    overflow-y: auto;
+    height: 100%;
 }
 
 footer{
@@ -81,7 +90,7 @@ footer{
     width: 100%;
 }
 
-img{
+div#contenitore img{
     width: 100%;
     height: 100%;
     object-fit: contain;
