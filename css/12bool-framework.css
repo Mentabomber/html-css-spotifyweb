@@ -6,7 +6,7 @@
     box-sizing: border-box;
 }
 
-
+@media screen and {min-width: 480px;}
 /* xs viewport  */
 
     .container{
@@ -722,7 +722,7 @@
     }
 }
 
-
+/*
 .container{
     max-width: 1170px;
     margin: 0 auto;
@@ -740,7 +740,7 @@
 
 
 /* colonne */
-
+/*
 [class*="col-"]{
     flex: 0 0 auto;
 }
@@ -851,7 +851,7 @@
 }
 
 /* offset  */
-
+/*
 .col-offset-1{
     margin-left: calc((100% / 12) * 1);
 }
@@ -900,3 +900,4 @@
     margin-left: calc((100% / 12) * 12);
 }
 
+*/

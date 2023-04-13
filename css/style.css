@@ -28,6 +28,7 @@ main{
     overflow-y: auto;
     height: calc(100vh - 100px);
     padding-top: 120px;
+    color: white;
 }
 #testata{
     height: 100px;
@@ -86,10 +87,9 @@ footer .row .row{
     width: 100%;
 
 }
-.col-2{
+.col-lg-2{
     border: 1px solid black;
-    flex-basis: calc((100% / 12) * 2 - 5%);
-    max-width: 100%;;  
+    padding: 0 15px;  
 }
 .col-3, .col-5{
     border: 1px solid black;
