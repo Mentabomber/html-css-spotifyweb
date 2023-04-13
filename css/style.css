@@ -48,41 +48,61 @@ main{
     height: 100%;
     margin: 0 20px;
 }
-
-#nav-esterno,
+#nav-esterno ul,
 #nav-interno ul{
-    display: flex;
     list-style-type: none;
 }
 #nav-interno ul{
+    display: flex;
     justify-content: center;
+    padding: 10px 0;
 }
 #nav-interno li{
     padding: 0 10px;
 }
 #nav-esterno{
-    flex-direction: column;
-    justify-content: space-between;
+    display: flex;
+    position: relative;
     height: calc(100vh - 100px);
     min-height: 120px;
     width: 200px;
     background-color: black;
     color: white;
 }
+#mini-nav{
+    border-left: 3px solid rgb(173,255,47);
+    border-image: linear-gradient(to bottom,rgb(173,255,47) 33%, transparent 33%) 1;
+
+    /* poi dovrebbe cambiare in % con hover per farsi che quando uno seleziona cerca o librerira il bordo verde shifti sul medesimo */
+}
+
+
 #logo{
     height: 100px;
     display: flex;
 }
 #nav-esterno img{
+    width: 10%;
+}
+#logo img{
     width: 70%;
 }
 #nav-esterno li{
-    padding-left: 10px;
+    padding: 5px
 }
 .overflow-ul{
-    overflow-y: auto;
-    height: 100%;
+    overflow: auto;
+    position: absolute;
 }
+.overflow-ul a{
+    color: rgb(163,163,163);
+}
+
+.overflow-ul i{
+    font-size: 30px;
+    padding-right: 5px;
+}
+
 
 footer{
     height: 100px;
