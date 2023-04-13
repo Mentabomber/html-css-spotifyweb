@@ -54,11 +54,20 @@ main{
 }
 #nav-interno ul{
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     padding: 10px 0;
 }
 #nav-interno li{
     padding: 0 10px;
+    font-size: 10px;
+}
+.border{
+    width: 50%;
+    height: 5px;
+    border-bottom: 3px solid rgb(173,255,47);
+    margin: auto;
+
 }
 #nav-esterno{
     display: flex;
