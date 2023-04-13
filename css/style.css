@@ -52,10 +52,10 @@ main{
 #nav-esterno,
 #nav-interno ul{
     display: flex;
+    list-style-type: none;
 }
 #nav-interno ul{
     justify-content: center;
-    list-style-type: none;
 }
 #nav-interno li{
     padding: 0 10px;
@@ -69,8 +69,15 @@ main{
     background-color: black;
     color: white;
 }
-#nav-eseterno img{
-    width: 50%;
+#logo{
+    height: 100px;
+    display: flex;
+}
+#nav-esterno img{
+    width: 70%;
+}
+#nav-esterno li{
+    padding-left: 10px;
 }
 .overflow-ul{
     overflow-y: auto;
